@@ -17,7 +17,28 @@ https://technicalshop-production.up.railway.app/
 2. Navega hasta la carpeta del proyecto.
 3. Instala las dependencias con `npm install`.
 4. Ejecuta el proyecto con `npm run dev`.
-5. Para construir el proyecto para producción, usa `npm run build`.
+
+## Funcionalidad
+
+Lo que se busca con esta aplicacion es detectar las instancias conectadas mediante un token.
+
+1. Para generar un token:
+
+   - Usando `Postman`:
+     - metodo: `POST`
+     - credenciales:
+     ```
+     {
+         "email": "test1@example-pet-store",
+         "password": "Abc1234"
+     }
+     ```
+     - endpoint:
+     ```
+     https://technicalshop-production.up.railway.app/api/auth/login
+     ```
+
+2. Pega el token generado en la casilla correspondiente. Y puedes seguir el mismo procedimiento para crear otra instancia y enviar mensajes entre los usuarios conectados.
 
 ---
 
@@ -28,4 +49,4 @@ https://technicalshop-production.up.railway.app/
   </tr>
 </table>
 
-[![Deployed with Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-black?style=for-the-badge&logo=vercel)](https://kimche-rick-and-morty-zeta.vercel.app/)
+[![Deployed with Vercel](https://img.shields.io/badge/Deployed%20with-Vercel-black?style=for-the-badge&logo=vercel)](https://technical-shop-websocket-7m5c3a5d6-solideomyers-projects.vercel.app/)
